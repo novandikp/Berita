@@ -2,7 +2,7 @@
 <footer class="footer-area mt-5">
    <div class="container">
       <div class="row f_widgets_inner">
-         <div class="col-lg-6 col-md-6 col-sm-6">
+         <div class="col-lg-12">
             <div class="single-footer-widget">
                   <div class="f_title">
                   <h3>Link Cepat

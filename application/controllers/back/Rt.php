@@ -7,8 +7,8 @@ class Rt extends CI_Controller {
 	var $id = 'id';
 	var $tableJoin = '';
 	var $viewName = 'view_rt';
-	var $column_order = ['rt'];
-	var $column_search = ['rt'];
+	var $column_order = ['id','rt','rw'];
+	var $column_search = ['rt','rw'];
 
    public function __construct()
 	{
@@ -25,9 +25,8 @@ class Rt extends CI_Controller {
       foreach($list as $li){
          $row = [];
          $row[] = $no++;
-			$row[] = $li->rt;
-			
-			$row[] = $li->rw;
+		$row[] = $li->rt;
+		$row[] = $li->rw;
          $row[] = 
          '<div class="btn-group"><a class="btn btn-sm btn-warning text-white mr-1" href="#" 
          title="Edit" onclick="edit_rt('."'" . $li->id . "'".')">

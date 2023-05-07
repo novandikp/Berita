@@ -7,7 +7,7 @@ class Rw extends CI_Controller {
 	var $id = 'id';
 	var $tableJoin = '';
 	var $viewName = 'view_rw';
-	var $column_order = ['rw'];
+	var $column_order = ['id','rw','jumlah_umkm'];
 	var $column_search = ['rw'];
 
    public function __construct()

@@ -106,7 +106,7 @@
 					</div>
 					<div class="form-group row">
 
-						<label for="id_rt" class="col-md-2 col-form-label"><span class="text-danger">*</span> RW</label>
+						<label for="id_rt" class="col-md-2 col-form-label"><span class="text-danger">*</span> RT</label>
 						<div class="col-md-4">
 							<select class="form-control" id="id_rt" name="id_rt">
 								<?php foreach ($rt as $c) : ?>

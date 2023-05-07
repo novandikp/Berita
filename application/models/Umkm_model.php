@@ -18,6 +18,11 @@ class Umkm_model extends CI_Model {
 		return $this->db->get("rt")->result();
 	}
 
+	public function getViewRT(){
+		$this->db->select("id, concat('RT ',rt,' RW ',rw) as rt");
+		return $this->db->get("view_rt")->result();
+	}
+
    public function getDefaultValues()
    {
       return [

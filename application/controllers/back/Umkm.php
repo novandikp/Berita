@@ -120,7 +120,7 @@ class Umkm extends CI_Controller {
 		if($this->form_validation->run() == false){
 			$data['title'] = 'Tambah UMKM';
 			$data['form_action'] = base_url("back/umkm/create");
-			$data['rt'] = $this->umkm->getRT();
+			$data['rt'] = $this->umkm->getViewRT();
 			$data['input'] = $input;
 			$data['menu'] = $this->menu->getMenu();
 			$this->load->view('back/pages/article/form_umkm', $data);
@@ -188,7 +188,7 @@ class Umkm extends CI_Controller {
 		if($this->form_validation->run() == false){
 			$data['title'] = 'Edit UMKM';
 			$data['form_action'] = base_url("back/umkm/update/$id");
-			$data['rt'] = $this->umkm->getRT();
+			$data['rt'] = $this->umkm->getViewRT();
 			$data['input'] = $input;
 			$data['menu'] = $this->menu->getMenu();
 			$this->load->view('back/pages/article/form_umkm', $data);

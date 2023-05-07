@@ -20,6 +20,7 @@ class Umkm_model extends CI_Model {
 
 	public function getViewRT(){
 		$this->db->select("id, concat('RT ',rt,' RW ',rw) as rt");
+		$this->db->order_by("rt", "ASC");
 		return $this->db->get("view_rt")->result();
 	}
 

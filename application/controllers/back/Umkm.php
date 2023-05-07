@@ -9,9 +9,9 @@ class Umkm extends CI_Controller {
 	var $id = 'id';
 	var $tableJoin = 'rw';
 	var $viewName = 'view_umkm';
-	var $column_order = ['nama_umkm','pemilik','rw'];
+	var $column_order = ['nama_umkm','pemilik','rw','pemilik','status','rw'];
 	var $column_search = ['nama_umkm','pemilik','rw'];
-	var $select = ['umkm.id','umkm.nama_umkm','umkm.pemilik','umkm.status','rw.rw'];
+	var $select = ['id','nama_umkm','pemilik','status','rw'];
    public function __construct()
 	{
 		parent::__construct();

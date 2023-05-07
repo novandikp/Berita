@@ -117,7 +117,7 @@ class Umkm_model extends CI_Model {
 		// $this->db->from('umkm');
 		// $this->db->select('umkm.id,umkm.id_rw, umkm.nama_umkm, umkm.pemilik, umkm.nib, umkm.deskripsi, umkm.lokasi, umkm.whatsapp, umkm.shopee, umkm.tokopedia, umkm.facebook, umkm.status, umkm.gojek, umkm.grab, umkm.link_gmaps, umkm.cover, created_at, rw.rw');
 		// $this->db->join('rw', 'rw.id = umkm.id_rw', 'left');
-		$this->db->where('rw.id', $idrw);
+		$this->db->where('id_rw', $idrw);
 		$this->db->order_by('created_at', 'DESC');
 		if($page){
 			$this->paginate($page);
